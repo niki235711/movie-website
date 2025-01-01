@@ -1,0 +1,47 @@
+/* استایل اصلی صفحه */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* تنظیمات container برای نمایش تصاویر */
+.slideshow-container {
+    width: 70%; /* عرض کانتینر */
+    height: 300px; /* ارتفاع کانتینر */
+    position: relative;
+    margin: 20px auto; /* مرکز کردن کانتینر */
+    border: 2px solid #ccc; /* حاشیه برای زیبایی */
+    border-radius: 10px; /* لبه‌های گرد */
+    overflow: hidden; /* جلوگیری از خروج تصویر از کانتینر */
+    background-color: #fff; /* پس‌زمینه سفید برای زمانی که تصویر لود نشده است */
+}
+
+/* تنظیمات برای هر اسلاید */
+.mySlides {
+    display: none;
+    position: absolute;
+    width: 100%; /* عرض کانتینر */
+    height: 100%; /* ارتفاع کانتینر */
+}
+
+/* تنظیمات برای تصاویر داخل اسلاید */
+.mySlides img {
+    width: 100%; /* عرض تصویر به اندازه کانتینر */
+    height: 100%; /* ارتفاع تصویر به اندازه کانتینر */
+    object-fit: contain; /* جاگیری کامل تصاویر داخل قاب با حفظ نسبت */
+    object-position: center; /* تراز کردن تصویر به مرکز */
+    border-radius: 5px; /* لبه‌های گرد تصاویر */
+}
+
+/* تنظیم انیمیشن برای fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}

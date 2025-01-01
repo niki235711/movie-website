@@ -1,0 +1,65 @@
+body {
+    direction: rtl;
+    text-align: center;
+    font-family: 'Vazir', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border:2px solid rgb(#4CAF50);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+}
+
+legend{
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+    padding: 0 10px;
+    background-color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="mobile"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Vazir', sans-serif;
+}
+
+/* دکمه ارسال */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Vazir', sans-serif;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+body {
+    direction: rtl;
+    font-family: 'Vazir', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}

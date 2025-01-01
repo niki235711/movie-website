@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایش فیلم</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/font-face.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="movie.css">
+    <script src="validation.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>nik movie</h1>
+        <h4>دانلود فیلم و سریال</h4>
+        <nav>
+            <ul>
+                <li><a href="movie_index.html">صفحه اصلی</a></li>
+                <!-- <li><a href="#nn">فیلم‌ها</a></li> -->
+                <!-- <li><a href="#mm">سریال‌ها</a></li> -->
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- اطلاعات فیلم -->
+        <section class="movie-details">
+            <img src="wolf-walkers.jpg" alt="پوستر فیلم">
+            <div class="info">
+                <h2>عنوان فیلم</h2>
+                <p><strong>کارگردان:</strong> Tomm MooreRoss Stewart</p>
+                <p><strong>بازیگران:</strong> WhittakerSean Bean، Honor KneafseyEva</p>
+                <p><strong>نویسنده:</strong> Will CollinsTomm , MooreRoss Stewart</p>
+                <p><strong>ژانر:</strong>انیمیشن , خانوادگی , فانتزی , ماجراجویی</p>
+                <p><strong>سال تولید:</strong> 2019</p>
+                <p><strong>مدت زمان:</strong> ۲ ساعت و ۱۵ دقیقه</p>
+                <p><strong>محصول کشور:</strong>انگلستان , ایرلند , فرانسه , لوکزامبور</p>
+                <p>این فیلم داستانی جذاب درباره ...</p>
+                <div class="rating">
+                    <strong>امتیاز:</strong> ۸.۵/۱۰ (IMDb)
+                </div>
+                <button>تماشای تریلر</button>
+                <button>دانلود فیلم</button>
+            </div>
+        </section>
+
+        <!-- گالری تصاویر -->
+        <section class="gallery">
+            <h2>گالری تصاویر</h2>
+            <div class="images">
+                <img src="gallery1.jpg" alt="تصویر ۱">
+                <img src="gallery2.jpg" alt="تصویر ۲">
+                <img src="gallery3.jpg" alt="تصویر ۳">
+            </div>
+        </section>
+
+        <section class="user-interaction">
+            <h2>نظرات کاربران</h2>
+            <!-- فرم کامنت‌گذاری -->
+            <form id="comment-form">
+                <label for="name">نام:</label>
+                <input type="text" id="name" name="name" placeholder="نام خود را وارد کنید" required>
+                <label for="email">ایمیل:</label>
+                <input type="email" id="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
+                <label for="comment">کامنت:</label>
+                <textarea id="comment" name="comment" placeholder="نظر خود را بنویسید..." required></textarea>
+                <button type="submit">ارسال نظر</button>
+                <p id="comment-message" class="message"></p>
+            </form>
+    
+            <!-- فرم امتیازدهی -->
+            <form id="rating-form">
+                <label for="rating">امتیاز:</label>
+                <input type="number" id="rating" name="rating" placeholder="امتیاز بین 1 تا 10" min="1" max="10" required>
+                <button type="submit">ارسال امتیاز</button>
+                <p id="rating-message" class="message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>کلیه حقوق محفوظ است &copy; 2025</p>
+    </footer>
+
+   
+</body>
+</html>
